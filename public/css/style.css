@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shippori+Antique+B1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+header {
+  text-transform: capitalize;
+  height: 20vh;
+  border-bottom: 0.1rem solid rgba(18, 18, 18, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  vertical-align: middle;
+  font-family: "Satisfy", cursive;
+  letter-spacing: 0.2rem;
+  background-color: #e0e0e0;
+  -webkit-box-shadow: 0px 17px 17px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 17px 17px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+header .icons {
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  width: 200px;
+}
+
+header .icons a {
+  color: #444;
+  padding: auto;
+}
+
+header .icons a:hover {
+  color: #be399a;
+}
+
+header .icons a:visited {
+  color: #444;
+}
+
+header #user {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  font-family: "Shippori Antique B1", sans-serif;
+  letter-spacing: 0.1rem;
+  width: 400px;
+}
+
+header #user .register, header #user .login, header #user .logout {
+  width: 250px;
+  padding: 10px;
+  margin-right: 5px;
+  text-align: center;
+  border: 0.2rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+
+header #user a {
+  color: #444;
+  padding: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 20px;
+}
+
+header #user a:hover {
+  color: #be399a;
+}
+
+header nav {
+  margin: auto;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #444;
+  margin: 0px 80px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+header nav a:hover {
+  color: #be399a;
+}
+
+footer {
+  text-transform: capitalize;
+  height: 20vh;
+  border-top: 0.1rem solid rgba(18, 18, 18, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  vertical-align: middle;
+  letter-spacing: 0.1rem;
+  background-color: #e0e0e0;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #444;
+  margin: 0px 80px;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+footer div a:hover {
+  color: #be399a;
+}
+
+footer div a span {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.swiper {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.swiper-slide {
+  min-height: 80vh;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 30px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  min-height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+  width: 60vw;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.formulaire {
+  width: 60vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.15s linear;
+  transition: 0.15s linear;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

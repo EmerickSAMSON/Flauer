@@ -1,0 +1,26 @@
+@import './variables';
+@import './header';
+@import './footer';
+@import './main';
+@import './form';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: 0.15s linear;
+}
+
+
+body{
+  min-height: 100vh;
+  background-color: $bgColor;
+  font-family: $shippori;
+}

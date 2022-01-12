@@ -1,0 +1,32 @@
+footer{
+  text-transform: capitalize;
+  height: 20vh;
+  border-top: $border;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  letter-spacing: 0.1rem;
+  background-color: $bgColor2;
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    a{
+      text-decoration: none;
+      color: $textColor;
+      margin: 0px 80px;
+      font-weight: 500;
+      font-size: 40px;
+
+      &:hover{
+        color: $hoverColor;
+        // text-decoration: underline;
+      }
+      span{
+        font-size: 12px;
+        vertical-align: middle;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,82 @@
+header {
+  text-transform: capitalize;
+  height: 20vh;
+  border-bottom: $border;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  font-family: $satisfy;
+  letter-spacing: 0.2rem;
+  background-color: $bgColor2;
+  box-shadow: $shadow;
+  z-index: 10;
+
+  .icons {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 200px;
+
+    a {
+      color: $textColor;
+      padding: auto;
+
+      &:hover {
+        color: $hoverColor;
+        // text-decoration: underline;
+      }
+      &:visited {
+        color: $textColor;
+      }
+    }
+  }
+
+  #user {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    font-family: $shippori;
+    letter-spacing: 0.1rem;
+    width: 400px;
+
+    .register, .login, .logout{
+      width: 250px;
+      padding: 10px;
+      margin-right: 5px;
+      text-align: center;
+      border: 0.2rem solid rgba($color: #000, $alpha: 0.3);
+      border-radius: 30px;
+    }
+
+    a {
+      color: $textColor;
+      padding: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      height: 20px;
+
+      &:hover {
+        color: $hoverColor;
+        // text-decoration: underline;
+      }
+    }
+  }
+
+  nav {
+    margin: auto;
+    a {
+      text-decoration: none;
+      color: $textColor;
+      margin: 0px 80px;
+      font-weight: 500;
+      font-size: 30px;
+
+      &:hover {
+        color: $hoverColor;
+        // text-decoration: underline;
+      }
+    }
+  }
+}

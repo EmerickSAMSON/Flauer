@@ -1,0 +1,57 @@
+<header>
+
+	<img src="" alt="" class="background">
+
+	<a href="" class="logo">
+		<img src="" alt="">
+	</a>
+
+	<nav class="navbar">
+
+		<a href="{{ path('accueil') }}">accueil</a>
+		<a href="#realisation">réalisation</a>
+		<a href="#about">à propos</a>
+		<a href="#contact">contact</a>
+
+	</nav>
+
+
+	<div id="user">
+
+		{% if app.user == false %}
+
+			<div class="register">
+				<a href="{{ path('app_register') }}">S'enregistrer</a>
+			</div>
+			<div class="login">
+				<a href="">Se Connecter</a>
+			</div>
+		{% endif %}
+		{% if app.user %}
+			<div class="logout">
+				<a href="">Deconnexion</a>
+			</div>
+
+		{% endif %}
+
+	</div>
+
+	<div class="icons">
+
+		<div id="search">
+
+			<a href="#">
+				<i class="fas fa-search" id="search-btn"></i>
+			</a>
+
+		</div>
+		<div id="panier">
+
+			<a href="#">
+				<i class="fas fa-shopping-cart" id="cart-btn"></i>
+			</a>
+
+		</div>
+	</div>
+
+</header>
