@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{ parent() }}Mon compte{% endblock %}
+
+{% block body %}
+
+<div id="Profil">
+
+{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+    <p>Email: {{app.user.email}}</p>
+    <p>Nom: {{app.user.nom}}</p>
+    <p>Prénom: {{app.user.prenom}}</p>
+    
+{% endif %}
+
+
+</div>
+
+
+{% endblock %}

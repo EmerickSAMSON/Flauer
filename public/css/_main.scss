@@ -1,38 +1,12 @@
-main{
-  min-height: 80vh;
+main {
+  min-height: 90vh;
+
+  #menu_admin {
+    min-height: 50vh;
+  }
 }
 
-  .swiper {
-    width: 100%;
-    min-height: 80vh;
-  }
 
-  .swiper-slide {
-    min-height: 80vh;
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    font-family: $shippori;
-    font-size: 30px;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    min-height: 80vh;
-    object-fit: cover;
-  }
+#profil{
+  width: 30%;
+}

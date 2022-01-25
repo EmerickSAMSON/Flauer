@@ -1,0 +1,70 @@
+table {
+    font-family: $shippori;
+    margin: 3rem auto;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 80%;
+    box-shadow: $shadow;
+
+    border-collapse: collapse;
+    thead {
+        background-color: #d1d1d1;
+        color: rgb(26, 26, 26);
+    }
+    tr {
+        height: 50px;
+        border: 0.1rem solid black;
+    }
+    tbody {
+        background-color: #fefefe;
+    }
+
+    .fas {
+        font-size: 22px;
+    }
+    .fas:visited {
+        color: inherit;
+    }
+
+    .fa-sticky-note {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .fa-minus-circle {
+        color: red;
+    }
+}
+
+#new_produit {
+    margin-left: 60vw;
+    text-align: center;
+    #btn_new_produit {
+        border-radius: 10px;
+        cursor: pointer;
+        width: 200px;
+        height: 50px;
+        background-color: $btnValidation;
+        color: #fff;
+        box-shadow: $shadow;
+    }
+}
+
+
+.success, .warning{
+    margin: 3rem auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 20vw;
+
+}
+
+.success{
+    background-color: $btnValidation;
+    color: #fff;
+}
+.warning{
+    background-color: red;
+    color: #fff;
+}

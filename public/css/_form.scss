@@ -1,4 +1,4 @@
-h1{
+h1 {
   display: flex;
   justify-content: center;
   margin: 20px auto;
@@ -7,9 +7,43 @@ h1{
   text-decoration: underline;
 }
 
-.formulaire{
-  width: 60vw;
+#formProduit, .formulaire {
+  width: 25vw;
   margin: auto;
-  display: flex;
-  justify-content: center;
+  border: $border;
+  border-radius: 10px;
+  min-height: 30vh;
+  padding: 0 2rem;
+  box-shadow: $shadow;
+  .form-group {
+    display: grid;
+    label {
+      text-transform: uppercase;
+    }
+    input {
+      border: 0.1rem solid black;
+      border-radius: 10px;
+      padding-left: 0.5rem;
+    }
+    textarea{
+      border: 0.1rem solid black;
+      border-radius: 10px;
+      padding-left: 0.5rem;
+      min-height: 120px;
+      resize: vertical;
+    }
+  }
+
+  button {
+    
+    height: 2rem;
+    width: 100%;
+    border-radius: 10px;
+    background-color: $btnValidation;
+    box-shadow: $shadow;
+    color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+  }
 }

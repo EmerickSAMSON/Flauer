@@ -1,7 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AdminController!{% endblock %}
+{% block title %}
+  {{ parent() }} Dashboard
+{% endblock %}
 
 {% block body %}
-
+  <section id="menu_admin">
+    <a href="{{ path('admin_produit_afficher') }}">Gérer les produits</a>
+    <a href="{{ path('admin_produit_afficher') }}">Gérer le carousel</a>
+  </section>
 {% endblock %}

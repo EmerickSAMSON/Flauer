@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	{{ parent() }}Modification du produit
+{% endblock %}
+
+{% block body %}
+
+
+	<h1>Modifier un produit</h1>
+
+	{{ form_start(formProduit, {"attr":{'id': 'formProduit'}}) }}
+
+	{{ form_row(formProduit.nom) }}
+	{{ form_row(formProduit.description) }}
+	{{ form_row(formProduit.prix) }}
+
+
+	<button type="submit">Modifier le produit</button>
+	{{ form_end(formProduit) }}
+
+{% endblock %}

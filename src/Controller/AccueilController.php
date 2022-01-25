@@ -34,11 +34,15 @@ class AccueilController extends AbstractController
     public function accueil()
     {
 
-        
-
-
-
         return $this->render('accueil/accueil.html.twig', [
         ]);
+    }
+
+    /**
+     * @Route("profil", name="profil")
+     */
+    public function profil()
+    {
+        return $this->render('accueil/profil.html.twig', []);
     }
 }

@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	Ajouter un produit
+{% endblock %}
+
+{% block body %}
+
+	<h1>Ajouter un produit</h1>
+
+	{{ form_start(formProduit, {"attr":{'id': 'formProduit'}}) }}
+
+	{{ form_row(formProduit.nom) }}
+	{{ form_row(formProduit.description) }}
+	{{ form_row(formProduit.prix) }}
+
+
+	<button type="submit">Ajouter le produit</button>
+	{{ form_end(formProduit) }}
+{% endblock %}

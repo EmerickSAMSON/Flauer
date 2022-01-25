@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	{{ parent() }}
+	Produit
+{% endblock %}
+{% block body %}
+	{% for success in app.flashes('success') %}
+		<div class="success">
+			{{ success }}
+		</div>
+	{% endfor %}
+	{% for warning in app.flashes('warning') %}
+		<div class="warning">
+			{{ warning }}
+		</div>
+	{% endfor %}
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Nom</th>
+				<th>Description</th>
+				<th>Prix</th>
+				<th>Modifier</th>
+				<th>Supprimer</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			{% for produit in produits %}
+
+
+				<tr>
+					<td>{{produit.id}}</td>
+					<td>{{produit.nom}}</td>
+					<td>{{produit.description}}</td>
+					<td>{{produit.prix}}€</td>
+					<td>
+						<a href="{{path('produit_modifier', {'id': produit.id})}}">
+							<i class="fas fa-sticky-note"></i>
+						</a>
+					</td>
+					<td>
+						<a href="{{path('produit_supprimer', {'id': produit.id})}}">
+							<i class="fas fa-minus-circle"></i>
+						</a>
+					</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<a id='new_produit' href="{{path('produit_ajouter')}}">
+		<input id="btn_new_produit" type="button" value="Ajouter un produit">
+	</a>
+
+{% endblock %}

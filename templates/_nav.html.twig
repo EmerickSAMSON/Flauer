@@ -24,15 +24,28 @@
 				<a href="{{ path('app_register') }}">S'enregistrer</a>
 			</div>
 			<div class="login">
-				<a href="">Se Connecter</a>
+				<a href="{{path('app_login')}}">Se Connecter</a>
 			</div>
 		{% endif %}
+
+
 		{% if app.user %}
 			<div class="logout">
-				<a href="">Deconnexion</a>
+				<a href="{{path('app_logout')}}">Deconnexion</a>
+			</div>
+			<div class="profil">
+				<a href="{{path('profil')}}">Mon compte</a>
 			</div>
 
+			{% if is_granted("ROLE_ADMIN") %}
+
+				<div class="dashboard">
+					<a href="{{path('admin')}}">Dashboard</a>
+				</div>
+
+			{% endif %}
 		{% endif %}
+
 
 	</div>
 

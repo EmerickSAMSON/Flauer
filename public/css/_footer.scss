@@ -1,6 +1,6 @@
-footer{
+footer {
   text-transform: capitalize;
-  height: 20vh;
+  min-height: 10vh;
   border-top: $border;
   display: flex;
   justify-content: space-around;
@@ -11,22 +11,21 @@ footer{
   div {
     display: flex;
     justify-content: space-around;
-    a{
+    a {
       text-decoration: none;
       color: $textColor;
       margin: 0px 80px;
       font-weight: 500;
       font-size: 40px;
 
-      &:hover{
+      &:hover {
         color: $hoverColor;
         // text-decoration: underline;
       }
-      span{
+      span {
         font-size: 12px;
         vertical-align: middle;
       }
-
     }
   }
 }

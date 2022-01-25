@@ -1,22 +1,25 @@
 header {
+  // position: absolute;
+  // float: left;
   text-transform: capitalize;
-  height: 20vh;
+  height: 11vh;
+  width: 100%;
   border-bottom: $border;
   display: flex;
   justify-content: space-around;
   vertical-align: middle;
-  font-family: $satisfy;
+  font-family: $josefin;
   letter-spacing: 0.2rem;
   background-color: $bgColor2;
   box-shadow: $shadow;
   z-index: 10;
 
   .icons {
-    font-size: 40px;
+    font-size: 24px;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     margin: auto;
-    width: 200px;
+    width: 80px;
 
     a {
       color: $textColor;
@@ -35,19 +38,19 @@ header {
   #user {
     font-size: 12px;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     margin: auto;
     font-family: $shippori;
     letter-spacing: 0.1rem;
-    width: 400px;
+    width: 300px;
 
-    .register, .login, .logout{
+    .register,
+    .login,
+    .logout {
       width: 250px;
       padding: 10px;
       margin-right: 5px;
       text-align: center;
-      border: 0.2rem solid rgba($color: #000, $alpha: 0.3);
-      border-radius: 30px;
     }
 
     a {
@@ -67,11 +70,12 @@ header {
   nav {
     margin: auto;
     a {
+      vertical-align: baseline;
       text-decoration: none;
       color: $textColor;
       margin: 0px 80px;
       font-weight: 500;
-      font-size: 30px;
+      font-size: 20px;
 
       &:hover {
         color: $hoverColor;
